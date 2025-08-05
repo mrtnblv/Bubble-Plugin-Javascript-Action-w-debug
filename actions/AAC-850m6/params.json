@@ -1,0 +1,59 @@
+{
+    "category": "plugins",
+    "display": "JS Action",
+    "fields": {
+        "AAD": {
+            "caption": "JavaScript Code",
+            "default_val": "helpers.log(\"Start\"); await helpers.delay(2000); helpers.log(\"End\");",
+            "doc": "The JavaScript code to be executed.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "script",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAE": {
+            "caption": "Run Asynchronously",
+            "default_val": true,
+            "doc": "When enabled, your script will run asynchronously in a non-blocking way. This is required if your code uses await, delay, fetch, or other asynchronous operations. If disabled, the script runs immediately and synchronously.",
+            "editor": "DynamicValue",
+            "name": "async",
+            "rank": 5,
+            "value": "boolean"
+        },
+        "AAF": {
+            "caption": "Debug Mode",
+            "default_val": false,
+            "doc": "When enabled, the plugin will log the input script, result, and any errors to the browser console. Useful for development and troubleshooting.",
+            "editor": "DynamicValue",
+            "name": "debug",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AAG": {
+            "caption": "- helpers.log(...args) : Logs one or more values to the browser console, prefixed with [JSAction].",
+            "editor": "Label",
+            "name": "helpers.log",
+            "rank": 2
+        },
+        "AAH": {
+            "caption": "- helpers.now() : Returns the current date and time as an ISO string.",
+            "editor": "Label",
+            "name": "helpers.now",
+            "rank": 4
+        },
+        "AAI": {
+            "caption": "- helpers.delay(ms) : Returns a Promise that resolves after the given number of milliseconds (Can be used with await).",
+            "editor": "Label",
+            "name": "helpers.wait",
+            "rank": 3
+        },
+        "AAJ": {
+            "caption": "Available Helper Functions:",
+            "editor": "Label",
+            "name": "helpers.header",
+            "rank": 1
+        }
+    },
+    "type": "client_side"
+}

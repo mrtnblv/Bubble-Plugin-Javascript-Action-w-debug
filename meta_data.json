@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "productivity",
+        "1": "technical",
+        "2": "data (things)"
+    },
+    "data_tracked": false,
+    "description": "This plugin lets you execute custom JavaScript code directly from a workflow.\n\nIt supports both synchronous and asynchronous scripts (await, fetch, etc.).\n\n💡 Debug Mode: When enabled, the plugin logs your script, result, and any errors to the browser console. This makes it easy to test, troubleshoot, and understand what’s going on in your code — especially when working with complex or async logic.\n\n💡 Helpers:\n\n- helpers.log(...args)\nLogs one or more values to the browser console, prefixed with [JSAction].\n\n- helpers.delay(ms)\nReturns a Promise that resolves after a given delay (can be used with await).\n\n- helpers.now()\nReturns the current date and time as an ISO string.\n\n",
+    "image": "//meta-q.cdn.bubble.io/f1743845056293x281183960663703420/image%20%281%29.png",
+    "license": "open_source",
+    "name": "Javascript Action w/ debug"
+}
